@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Catsnake Tester</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" />
+    <style>
+      body {
+        font-family: 'PT Sans', sans-serif;
+        background: #333;
+        color: #fff;
+      }
+      ul {
+        list-style-type: none;
+        padding:0;
+      }
+      li {
+        font-size: 15pt;
+      }
+      .fa-spinner {
+        color: #3498db;
+      }
+      .fa-check {
+        color: #2ecc71;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><i id="1" class="fa fa-spinner fa-pulse fa-fw margin-bottom"></i> .on method</li>
+      <li><i id="2" class="fa fa-spinner fa-pulse fa-fw margin-bottom"></i> .subscribe method gets messages</li>
+      <li><i id="3" class="fa fa-spinner fa-pulse fa-fw margin-bottom"></i> .publish method returns promise when server gets message</li>
+      <li><i id="4" class="fa fa-spinner fa-pulse fa-fw margin-bottom"></i> .subscribe method gets our own published method</li>
+      <li><i id="5" class="fa fa-spinner fa-pulse fa-fw margin-bottom"></i> .history gets sent to subscribe method</li>
+      <li><i id="6" class="fa fa-spinner fa-pulse fa-fw margin-bottom"></i> .subscribe gets payload with history type</li>
+      <li><i id="7" class="fa fa-spinner fa-pulse fa-fw margin-bottom"></i> .info gets client info</li>
+      <li><i id="8" class="fa fa-spinner fa-pulse fa-fw margin-bottom"></i> .subscribe gets payload with info type</li>
+      <li><i id="10" class="fa fa-spinner fa-pulse fa-fw margin-bottom"></i> .authenticate authenticates into private server</li>
+      <li><i id="12" class="fa fa-spinner fa-pulse fa-fw margin-bottom"></i> .grant allows access to private channel</li>
+      <li><i id="13" class="fa fa-spinner fa-pulse fa-fw margin-bottom"></i> .deny denies access to private channel</li>
+      <li><i id="15" class="fa fa-spinner fa-pulse fa-fw margin-bottom"></i> cant send to private channel when not added</li>
+      <li><i id="14" class="fa fa-spinner fa-pulse fa-fw margin-bottom"></i> passing clientId to constructor reserves id</li>
+    </ul>
+    </ul>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/catsnake/2.1.7/catsnake.js"></script>
+    <script type="text/javascript" src="test.js"></script>
+
+  </body>
+</html>
